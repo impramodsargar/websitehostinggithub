@@ -155,6 +155,24 @@ display: none;
     opacity: 80%;
 }
 
+.welcometext{
+  font-size: 4vw;
+}
+
+.welnext{
+  padding-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+
+.sec1h4{
+  padding-left: 2vw;font-size: 1.3vw;padding-top: 2.3vw;padding-bottom: 1vw;
+}
+
+.sec1p{
+  padding-left: 2vw;font-size: 1.2vw; padding-top: 0;
+}
+
 .section1 img{
   background-size: cover;
   max-width: 100%;
@@ -616,15 +634,18 @@ label {
   clear: both;
 }
 
+
+/* ////////////////////////chote device       111111111 ?????????????????????????? */
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25, .col-75 {
     width: 100%;
     margin-top: 0;
   }
 
-#firstimg{display: none;}
-#firstimg2{display: block;}
+#firstimg{display: block;}
+#firstimg2{display: none;}
   
 }
 
@@ -662,26 +683,68 @@ label {
 .row{
   margin: auto;
   justify-content: center;
+  display:inline;
 }
 .maintext{
   padding: 5vw 9vw;
 }
+.aParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;}
 
 .column{
   padding-bottom: 2vw;
   padding-left: 4vw;
   justify-content: center;
-    display: inline-flex;
-    width: 28%;
-    padding-top: 4vw;
+  display: inline;
+  padding-top: 4vw;
 }
 
-#firstimg{display: none;}
-#firstimg2{display: block;}
+#firstimg{display: block;
+  padding: 1vw 6vw 1vw 1vw;}
+#firstimg2{display: none;}
+
+
+/* ////////worked butu and butt1////////// */
+
+input[name=butu]{
+  font-size: inherit;
+    padding: 3vw 6vw;
 }
+
+input[name=butt1]{
+  font-size: inherit;
+    padding: 3vw 6vw;
+}
+
+.abovecard{
+  font-size: 2.7vw;
+}
+
+.sec1h4{
+  font-size: 4.5vw;
+}
+
+.sec1p{
+  font-size: 4vw;
+}
+
+.abovecard2{
+  font-size: 4vw;
+}
+.bob{
+  font-size: 3.5vw;
+}
+#section2ka1{
+  height: 80vh;
+}
+
+}
+
 
 /* ///////chote device///////// */
-
+/* ???????????????????????????????     not     working          ????????????????????????????? */
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
@@ -699,9 +762,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     top: 0;
     
   } 
+
+
+
   #section1{
     background: url('bck1.jpg');
-    height: 40vh;
+    height: 60vh;
     background-size: cover;
 }  
 
@@ -720,17 +786,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
   gap: 1.5vw;
 }
 
-#firstimg{display: none;}
-#firstimg2{display: block;}
+#firstimg{display: block;}
+#firstimg2{display: none;}
 
 }
 
-/* ///////chote device/////// */
+/* ///////chote device        worked for welcome text    ??????????? ????      /////// */
 @media screen and ( max-height: 899px ) 
 and ( max-width: 550px ) 
 {
 #section2{
-  height: 15vh;
+  height: 60vh;
   background:white;
   display: inline-block;
   width: 100%;
@@ -738,8 +804,9 @@ and ( max-width: 550px )
 }  
 
 
-#firstimg{display: none;}
-#firstimg2{display: block;}
+
+#firstimg{display: block;}
+#firstimg2{display: none;}
 
 #section2ka1 .row{
 display: flex;
@@ -747,6 +814,28 @@ height: 20vw;
 padding: 0vw 3vw 4vw 3vw;
 gap: 1.5vw;
 
+}
+
+.maintext{
+  margin-top: 10vh;
+  opacity: 60%;
+  padding: 15vw;
+  background: rgba(0, 0, 0, 0.74);
+}
+.boxmain{
+  display: inline;
+  opacity: 60%;
+ }
+
+.welcometext{
+text-align: start;
+font-size: 9vw;
+}
+
+.welnext{
+padding-bottom: 6vw;
+font-size: 3.5vw;
+font-family: emoji;
 }
 
 }
